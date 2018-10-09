@@ -55,6 +55,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>TestCases.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
