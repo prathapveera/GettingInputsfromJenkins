@@ -156,7 +156,7 @@ public class GetInputsFromJenkins {
 					
 					
 					DOMSource source = new DOMSource(doc);
-					StreamResult result = new StreamResult(new File(System.getProperty("user.dir")+"\\demo.xml"));
+					StreamResult result = new StreamResult(new File(System.getProperty("user.dir")+"\\TestCases.xml"));
 
 					// Output to console for testing
 				 //result = new StreamResult(System.out);
