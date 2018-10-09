@@ -164,7 +164,8 @@ public class GetInputsFromJenkins {
 					transformer.transform(source, result);
 
 					System.out.println("File saved!");	
-					Thread.sleep(3000);
+					Thread.sleep(4000);
+					System.out.println("XML Generation is completed");	
 					
 				} catch (Exception e) {
 					
