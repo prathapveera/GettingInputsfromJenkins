@@ -155,7 +155,7 @@ public class GetInputsFromJenkins {
 					StreamResult result = new StreamResult(new File(System.getProperty("user.dir")+"\\TestCases.xml"));
 
 					// Output to console for testing
-					// StreamResult result = new StreamResult(System.out);
+				 result = new StreamResult(System.out);
 
 					transformer.transform(source, result);
 
