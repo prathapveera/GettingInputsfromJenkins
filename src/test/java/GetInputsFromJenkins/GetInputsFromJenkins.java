@@ -8,7 +8,7 @@ public class GetInputsFromJenkins {
 	
 	public static void getInputsFromJenkins()
 	{
-		System.out.println(System.getenv("Modulename"));
+		System.out.println(System.getenv("Modules"));
 	}
 
 }
