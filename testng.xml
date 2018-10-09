@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="GetInputsFromJenkins.GetInputsFromJenkins"/>
+      <class name="com.GetInputsFromJenkins.GetInputsFromJenkins"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
