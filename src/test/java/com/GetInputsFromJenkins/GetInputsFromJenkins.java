@@ -30,7 +30,7 @@ public class GetInputsFromJenkins {
 				path=System.getProperty("user.dir")+"\\src\\test\\java\\com\\Questionaries_WithoutTestdataPreparation";
 			}else
 			{
-				path=System.getProperty("user.dir")+"\\src\\test\\java\\com\\Questionaries_WithoutTestdataPreparation";
+				path=System.getProperty("user.dir")+"\\src\\test\\java\\com\\Questionaries_WithTestdataPreparation";
 			}
 				
 			break;
