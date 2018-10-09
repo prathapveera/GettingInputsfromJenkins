@@ -71,7 +71,7 @@ public class GetInputsFromJenkins {
 		
 		for (File file : allpackages) {
 			
-			System.out.println(file.getName());
+			System.out.println(file.getName().substring(0, file.getName().indexOf(".")));
 			
 		}
 		
