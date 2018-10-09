@@ -38,7 +38,6 @@ public class GetInputsFromJenkins {
 		System.out.println(System.getenv("TestdataRequired"));
 		System.out.println(System.getenv("Environment"));
 	
-		
 		String path="";
 		System.out.println("========================================");
 		
@@ -87,7 +86,12 @@ public class GetInputsFromJenkins {
 			buildXML();
 		}
 		
-		
+		try {
+			Thread.sleep(4000);
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
 		
 	}
 		
@@ -174,7 +178,32 @@ public class GetInputsFromJenkins {
 				
 	}
 	
-	
+	@AfterClass
+	public static void runXML() throws InterruptedException
+	{
+		
+		Thread.sleep(2000);
+		
+		
+		// Create object of TestNG Class
+		TestNG runner=new TestNG();
+
+		// Create a list of String 
+		List<String> suitefiles=new ArrayList<String>();
+
+		// Add xml file which you have to execute
+		suitefiles.add("TestCases.xml");
+
+		// now set xml file for execution
+		runner.setTestSuites(suitefiles);
+
+		// finally execute the runner using run method
+		runner.run();
+		
+		
+		System.out.println("hello");
+		
+	}
 	
 
 }

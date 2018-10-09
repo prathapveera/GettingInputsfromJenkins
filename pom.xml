@@ -54,8 +54,7 @@
 				<version>2.18.1</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
-						<suiteXmlFile>TestCases.xml</suiteXmlFile>
+						<suiteXmlFile>testng.xml</suiteXmlFile>					
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
