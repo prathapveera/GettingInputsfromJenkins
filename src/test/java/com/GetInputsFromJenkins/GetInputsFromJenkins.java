@@ -164,7 +164,7 @@ public class GetInputsFromJenkins {
 					transformer.transform(source, result);
 
 					System.out.println("File saved!");	
-					
+					Thread.sleep(3000);
 					
 				} catch (Exception e) {
 					
