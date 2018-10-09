@@ -17,8 +17,43 @@ public class GetInputsFromJenkins {
 		System.out.println(System.getenv("TestdataRequired"));
 		System.out.println(System.getenv("Environment"));
 	
+		
+		String path="";
+		
+		
+		switch (System.getenv("Modules").toLowerCase()) {
+		case "questionarie":
+			
+			
+			if(System.getenv("TestdataRequired").equals("false"))
+			{
+				path=System.getProperty("user.dir")+"\\src\\test\\java\\com\\Questionaries_WithoutTestdataPreparation";
+			}else
+			{
+				path=System.getProperty("user.dir")+"\\src\\test\\java\\com\\Questionaries_WithoutTestdataPreparation";
+			}
+				
+			break;
+
+		default:
+			break;
+		}
+		
+		
+		System.out.println(path);	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	/*
-	File src= new File(System.getProperty("user.dir")+"\\src\\test\\java\\\\com");
+	File src= new File(System.getProperty("user.dir")+"\\src\\test\\java\\com");
 	
 	File[] allpackages=src.listFiles();
 	
