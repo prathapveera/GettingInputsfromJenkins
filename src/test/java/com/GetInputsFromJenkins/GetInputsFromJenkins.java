@@ -42,7 +42,7 @@ public class GetInputsFromJenkins {
 		String path="";
 		System.out.println("========================================");
 		
-		System.getProperty("user.dir");
+		System.out.println(System.getProperty("user.dir"));
 		
 		System.out.println("========================================");
 		
