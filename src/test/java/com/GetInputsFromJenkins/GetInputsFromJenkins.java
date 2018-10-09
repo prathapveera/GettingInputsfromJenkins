@@ -40,31 +40,27 @@ public class GetInputsFromJenkins {
 		}
 		
 		
-		System.out.println(path);	
+	if(! path.isEmpty())	
+	{
+
+		File src= new File(path);
+		
+		File[] allpackages=src.listFiles();
 		
 		
+		for (File file : allpackages) {
+			
+			System.out.println(file);
+			
+		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-	/*
-	File src= new File(System.getProperty("user.dir")+"\\src\\test\\java\\com");
-	
-	File[] allpackages=src.listFiles();
-	
-	
-	for (File file : allpackages) {
-		
-		System.out.println(file);
 		
 	}
+		
+		
+		
+		
 	
-	*/
 	
 	
 	}
