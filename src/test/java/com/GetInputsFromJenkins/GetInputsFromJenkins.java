@@ -28,7 +28,7 @@ import org.testng.annotations.Test;
 
 public class GetInputsFromJenkins {
 	
-	List alltestcases=new ArrayList();
+	static List alltestcases=new ArrayList();
 	
 	@Test
 	
@@ -72,10 +72,19 @@ public class GetInputsFromJenkins {
 		for (File file : allpackages) {
 			
 			System.out.println(file.getName().substring(0, file.getName().indexOf(".")));
+			alltestcases.add(file.getName().substring(0, file.getName().indexOf(".")));
+			
 			
 		}
 		
 		
+		if(!(alltestcases.size()==0))
+		{
+			buildXML();
+		}
+		
+		
+		
 	}
 		
 		
@@ -88,8 +97,8 @@ public class GetInputsFromJenkins {
 	
 	
 	
-	/*public static void buildXML()
-	{
+	public static void buildXML()
+	{try {
 		DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
 
@@ -137,19 +146,30 @@ public class GetInputsFromJenkins {
 				
 		// write the content into xml file
 				TransformerFactory transformerFactory = TransformerFactory.newInstance();
-				Transformer transformer = transformerFactory.newTransformer();
-				DOMSource source = new DOMSource(doc);
-				StreamResult result = new StreamResult(new File(Homepath+"\\TestCases.xml"));
+				Transformer transformer;
+				
+					transformer = transformerFactory.newTransformer();
+					
+					
+					DOMSource source = new DOMSource(doc);
+					StreamResult result = new StreamResult(new File(System.getProperty("user.dir")+"\\TestCases.xml"));
 
-				// Output to console for testing
-				// StreamResult result = new StreamResult(System.out);
+					// Output to console for testing
+					// StreamResult result = new StreamResult(System.out);
 
-				transformer.transform(source, result);
+					transformer.transform(source, result);
 
-				System.out.println("File saved!");	
+					System.out.println("File saved!");	
+					
+					
+				} catch (Exception e) {
+					
+					e.printStackTrace();
+				}
+				
 	}
 	
-*/	
+	
 	
 
 }
