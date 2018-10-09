@@ -40,7 +40,11 @@ public class GetInputsFromJenkins {
 	
 		
 		String path="";
+		System.out.println("========================================");
 		
+		System.getProperty("user.dir");
+		
+		System.out.println("========================================");
 		
 		switch (System.getenv("Modules").toLowerCase()) {
 		case "questionarie":
