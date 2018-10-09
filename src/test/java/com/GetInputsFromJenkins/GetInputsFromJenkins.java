@@ -75,7 +75,7 @@ public class GetInputsFromJenkins {
 		for (File file : allpackages) {
 			
 			System.out.println(file.getName().substring(0, file.getName().indexOf(".")));
-			alltestcases.add(file.getName().substring(0, file.getName().indexOf(".")));
+			alltestcases.add("com.Questionaries_WithoutTestdataPreparation"+file.getName().substring(0, file.getName().indexOf(".")));
 			
 			
 		}
@@ -147,7 +147,7 @@ public class GetInputsFromJenkins {
 					// set attribute to Class element
 					Attr classattr = doc.createAttribute("name");	
 					
-				classattr.setValue("com.TestCases."+alltestcases.get(i).toString());
+				classattr.setValue(alltestcases.get(i).toString());
 				classinsideclasses .setAttributeNode(classattr);	
 				}
 				
