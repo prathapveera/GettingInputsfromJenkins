@@ -119,7 +119,7 @@ public class GetInputsFromJenkins {
 				Attr attr = doc.createAttribute("name");
 				attr.setValue("Suite of Suits");
 				rootElement .setAttributeNode(attr);
-		//Listners
+	/*	//Listners
 				
 				Element listners = doc.createElement("listeners");
 				rootElement.appendChild(listners);	
@@ -132,7 +132,7 @@ public class GetInputsFromJenkins {
 				Attr listnername = doc.createAttribute("class-name");
 				listnername.setValue("com.FrameworkUtils.TestNgListners");
 				listner .setAttributeNode(listnername);
-				
+	*/			
 				
 	   // Test
 				Element test = doc.createElement("test");
